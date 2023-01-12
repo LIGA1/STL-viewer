@@ -10,6 +10,10 @@ from dash.dependencies import Input, Output, State
 random.seed(42)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+app.title = 'NovaLabs'
+app._favicon = ("logo.jpg")
+
 server = app.server
 
 vtk_view = dash_vtk.View(
